@@ -1,136 +1,89 @@
 #!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
-__author__ = 'geyixin'
-
 
 import pandas as pd
 from pyecharts import Bar, Line, Overlap, Pie
 
+f = open('链家南京.txt', 'r', encoding='utf-8')
 
-f = open('链家南京租房.txt', 'r', encoding='UTF-8')
+df = pd.read_csv(f, sep='\t', names=['area', 'title', 'zone', 'meter', 'area_detail', 'price'])
 
-df = pd.read_csv(f, sep=',', header=None, encoding='utf-8',
-                 names=['area', 'title', 'room_type', 'square', 'position',
-                        'detail_place', 'floor', 'total_floor', 'price', 'house_year'])
+# print(df)
+# print(df.describe())
 
-print(df.describe())
-
-
-# 北京路段_房屋均价分布图
-
-detail_place = df.groupby(['detail_place'])  # 按detail_place分组 基于 行/index 的聚合
-house_com = detail_place['price'].agg(['mean','count'])  # agg(['mean','count'])，基于列的聚合操作
-# print('第一次：',house_com)
-house_com.reset_index(inplace=True)
-# print('第二次：',house_com)   # reset_index可使dataframe数据规整
-detail_place_main = house_com.sort_values('count',ascending=False)[0:20]
-# sort_values('A',ascending=False)，按A列降序排。
-# print(detail_place_main)
-
-attr = detail_place_main['detail_place']
-# print('第一次attr:', attr)
-v1 = detail_place_main['count']
-# print('V1:', v1)
-v2 = detail_place_main['mean']
-# print('v2:', v2)
-
-line = Line("南京主要路段房租均价")
-line.add("路段",attr,v2,is_stack=True,xaxis_rotate=30,yaxix_min=4.2,
-    mark_point=['min','max'],xaxis_interval=0,line_color='lightblue',
-    line_width=4,mark_point_textcolor='black',mark_point_color='lightblue',
-    is_splitline_show=False)
-
-bar = Bar("南京主要路段房屋数量")
-bar.add("路段",attr,v1,is_stack=True,xaxis_rotate=30,yaxix_min=4.2,
-    xaxis_interval=0,is_splitline_show=False)
-
-# Overlap 结合不同类型图表叠加画在同张图上
+#  南京市各个主要路段租房均价和数量
+area_detail_price = df.groupby(['area_detail'])
+house = area_detail_price['price'].agg(['mean', 'count'])
+# print(len(house))
+# print(house)
+"""
+# house显示就是下面这样 ：
+                     mean  count
+area_detail                     
+万寿            2200.000000    138
+万达广场          5602.824859    177
+三牌楼           3200.000000    182
+东山镇           2866.666667    261
+"""
+house.reset_index(inplace=True)
+area_detail_price_count = house.sort_values('count', ascending=False)[0:45]
+# print(area_detail_price_mean)
+attr = area_detail_price_count['area_detail']
+v1 = area_detail_price_count['count']
+v2 = area_detail_price_count['mean']
+line = Line("南京主要路段房屋均价")
+line.add("均价", attr, v2, xaxis_rotate=80, mark_point=['min','max'], line_color='lightblue',
+         xaxis_interval=0, line_width=4)
+bar = Bar("南京主要路段房屋数量&均价")  # 会覆盖掉 Line("南京主要路段房屋均价") 的文字
+bar.add("路段", attr, v1, xaxis_rotate=90, xaxis_interval=0)
 overlap = Overlap()
 overlap.add(bar)
-overlap.add(line,yaxis_index=1,is_add_yaxis=True)  # is_add_yaxis=True,增加一排y坐标
-overlap.render('南京路段_房屋均价分布图.html')
-# overlap.render()
+overlap.add(line, yaxis_index=1,is_add_yaxis=True)
+overlap.render('南京主要路段房屋数量&均价.html')
 
 
-# 房源价格区间分布图
-price_info = df[['area', 'price']]
-# print('price_info', price_info)
-
-# 对价格分区
+# 不同价格区间内房源数量
+# area_price = df[['area', 'price']]  # 只取 area、price 两列
 bins = [0,1000,1500,2000,2500,3000,4000,5000,6000,8000,10000]
-level = ['0-1000','1000-1500', '1500-2000', '2000-3000', '3000-4000',
-         '4000-5000', '5000-6000', '6000-8000', '8000-1000','10000以上']
-price_stage = pd.cut(price_info['price'], bins=bins, labels=level).value_counts().sort_index()
-# print('price_stage:', price_stage)
-attr = price_stage.index
-# print('对价格分区attr:', attr)
-v1 = price_stage.values
+level = ['0-1000', '1000-1500', '1500-2000', '2000-2500', '2500-3000',
+         '3000-4000', '4000-5000', '5000-6000', '6000-8000', '8000以上']
+price_level = pd.cut(df['price'], bins=bins, labels=level).value_counts().sort_index()
+"""
+value_counts():统计value出现次数，在此即为价格区间内的房源数量
+sort_index()：以value排序
+bins是统计的界限
+labels是横坐标的显示结果。labels一定要和bins对应起来。
+"""
+# print(area_price_level)
+attr = price_level.index
+v1 = price_level.values
+"""
+每个价格区间内的数量: [ 526  194  999 2488 3179 2675 1680 1259 2113  576]
+"""
 
-bar = Bar("价格区间&房源数量分布")
-bar.add("",attr,v1,is_stack=True,xaxis_rotate=30,yaxix_min=4.2,
-    xaxis_interval=0,is_splitline_show=False)
-
+bar = Bar("价格区间&房源数量")
+bar.add("", attr, v1, xaxis_rotate=30)
 overlap = Overlap()
 overlap.add(bar)
-overlap.render('价格区间&房源数量分布.html')
-# overlap.render() # 生成html格式的图
+overlap.render('价格区间&房源数量.html')
 
 
 # 房屋面积分布
 bins = [0,30,60,90,120,150,200,300,400,700]
 level = ['0-30', '30-60', '60-90', '90-120', '120-150', '150-200',
-         '200-300','300-400','400+']
-df['square_level'] = pd.cut(df['square'], bins=bins, labels=level)  # 在 df 中多加一列
-
-# print('df:', df)
-
-df_digit = df[['area', 'room_type', 'square', 'position', 'total_floor',
-               'floor', 'house_year', 'price', 'square_level']]
-s = df_digit['square_level'].value_counts()
-
-# print('s:', s)
-
-attr = s.index
-# print('房屋面积attr:', attr)
-v1 = s.values
-# print('v1:', v1)
-
+         '200-300', '300-400', '400+']
+meter_level = pd.cut(df['meter'], bins=bins, labels=level).value_counts().sort_index()
+# print(meter_level)
+attr = meter_level.index
+v1 = meter_level.values
 pie = Pie("房屋面积分布", title_pos='center')
-
-pie.add("",attr,v1,radius=[40, 75],label_text_color=None,
-        is_label_show=True,legend_orient="vertical",legend_pos="left",)
-
+pie.add("", attr, v1, legend_pos="left", legend_orient="vertical",
+        is_label_show=True, radius=[40, 75])
+"""
+radius=[40, 75]:            空心圆
+legend_pos="left":          legend放在左边
+legend_orient="vertical"：   legend垂直放置
+"""
 overlap = Overlap()
 overlap.add(pie)
 overlap.render('房屋面积分布.html')
-
-
-# 房屋面积&价位分布
-bins = [0,30,60,90,120,150,200,300,400,700]
-level = ['0-30', '30-60', '60-90', '90-120', '120-150', '150-200',
-         '200-300','300-400','400+']
-df['square_level'] = pd.cut(df['square'], bins=bins, labels=level)
-
-df_digit = df[['area', 'room_type', 'square', 'position', 'total_floor', 'floor',
-               'house_year', 'price', 'square_level']]
-
-square = df_digit[['square_level','price']]
-prices = square.groupby('square_level').mean().reset_index()
-amount = square.groupby('square_level').count().reset_index()
-
-attr = prices['square_level']
-v1 = prices['price']
-
-pie = Pie("房屋面积&价位分布-pie", title_pos='center')
-pie.add("", attr, v1, is_label_show=True,legend_orient="vertical", legend_pos="left")
-pie.render('房屋面积&价位分布-pie.html')
-
-bar = Bar("房屋面积&价位分布-bar")
-bar.add("",attr,v1,is_stack=True,xaxis_rotate=30,yaxix_min=4.2,
-    xaxis_interval=0,is_splitline_show=False)
-
-overlap = Overlap()
-overlap.add(bar)
-overlap.render('房屋面积&价位分布-bar.html')
-
-
