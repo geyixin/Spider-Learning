@@ -103,7 +103,10 @@ requests 中的cookie
 #     print(key + '=' + value)
 #
 
-import beau
+from pyquery import PyQuery as pq
+res = pq(html)
+# res = pq(url='https://www.baidu.com')
+print(res('li'))
 
 
 
