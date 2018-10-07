@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="268ba968-b8f9-4ff9-b32e-3939ce5463a6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/python3 Internet Spider IN Action/exercise-spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/python3 Internet Spider IN Action/exercise-spider.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python3 Internet Spider IN Action/页面解析.md" beforeDir="false" afterPath="$PROJECT_DIR$/python3 Internet Spider IN Action/页面解析.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +16,8 @@
       <file leaf-file-name="exercise-spider.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python3 Internet Spider IN Action/exercise-spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="108" column="16" lean-forward="true" selection-start-line="108" selection-start-column="16" selection-end-line="108" selection-end-column="16" />
+            <state relative-caret-position="130">
+              <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
             </state>
           </provider>
         </entry>
@@ -138,7 +137,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="48" y="290" width="1024" height="688" extended-state="0" />
+    <frame x="48" y="290" width="1024" height="688" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34077078" />
@@ -190,8 +189,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python3 Internet Spider IN Action/exercise-spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="108" column="16" lean-forward="true" selection-start-line="108" selection-start-column="16" selection-end-line="108" selection-end-column="16" />
+        <state relative-caret-position="130">
+          <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
         </state>
       </provider>
     </entry>
