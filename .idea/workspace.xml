@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="268ba968-b8f9-4ff9-b32e-3939ce5463a6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/python3 Internet Spider IN Action/页面解析.md" beforeDir="false" afterPath="$PROJECT_DIR$/python3 Internet Spider IN Action/页面解析.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python3 Internet Spider IN Action/exercise-spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/python3 Internet Spider IN Action/exercise-spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python3 Internet Spider IN Action/数据保存.md" beforeDir="false" afterPath="$PROJECT_DIR$/python3 Internet Spider IN Action/数据保存.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +17,17 @@
       <file leaf-file-name="exercise-spider.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python3 Internet Spider IN Action/exercise-spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
+            <state relative-caret-position="50">
+              <caret line="154" lean-forward="true" selection-start-line="154" selection-end-line="154" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python3 Internet Spider IN Action/data.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -47,7 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="48" />
     <option name="y" value="290" />
     <option name="width" value="1024" />
@@ -137,13 +147,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="48" y="290" width="1024" height="688" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="703" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34077078" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30783242" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39184397" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -187,10 +197,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/python3 Internet Spider IN Action/data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/python3 Internet Spider IN Action/exercise-spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
+        <state relative-caret-position="50">
+          <caret line="154" lean-forward="true" selection-start-line="154" selection-end-line="154" />
         </state>
       </provider>
     </entry>
