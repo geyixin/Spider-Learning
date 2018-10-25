@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="268ba968-b8f9-4ff9-b32e-3939ce5463a6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python3 Internet Spider IN Action/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/python3 Internet Spider IN Action/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python3 Internet Spider IN Action/code/spider_weibo.py" beforeDir="false" afterPath="$PROJECT_DIR$/python3 Internet Spider IN Action/code/spider_weibo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +17,8 @@
       <file leaf-file-name="spider_weibo.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python3 Internet Spider IN Action/code/spider_weibo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="502">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
               <folding>
                 <element signature="e#94#128#0" expanded="true" />
               </folding>
@@ -244,8 +244,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python3 Internet Spider IN Action/code/spider_weibo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="502">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
           <folding>
             <element signature="e#94#128#0" expanded="true" />
           </folding>

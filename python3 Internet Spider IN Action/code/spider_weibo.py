@@ -34,6 +34,8 @@ def get_pages(page):
         'page': page
     }
     url = URL + urlencode(params)
+    # print(url)
+    # https://m.weibo.cn/api/container/getIndex?type=uid&value=2830678474&containerid=1076032830678474&page=1
     try:
         response = requests.get(url, headers=headers)
         if response.status_code == 200:     # 200表示服务器已成功处理了请求
@@ -71,35 +73,3 @@ if __name__ == '__main__':
         for res in ress:
             print(res)
             save_to_mongdb(res)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
