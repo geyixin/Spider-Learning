@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="268ba968-b8f9-4ff9-b32e-3939ce5463a6" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/python3 Internet Spider IN Action/code/spider_JinRiTouTiao.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python3 Internet Spider IN Action/code/spider_weibo.py" beforeDir="false" afterPath="$PROJECT_DIR$/python3 Internet Spider IN Action/code/spider_weibo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,12 +13,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="spider_weibo.py" pinned="false" current-in-tab="true">
+    <leaf>
+      <file leaf-file-name="spider_JinRiTouTiao.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python3 Internet Spider IN Action/code/spider_JinRiTouTiao.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="771">
+              <caret line="96" selection-start-line="96" selection-end-line="100" />
+              <folding>
+                <element signature="e#71#86#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spider_weibo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python3 Internet Spider IN Action/code/spider_weibo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="50">
+              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
               <folding>
                 <element signature="e#94#128#0" expanded="true" />
               </folding>
@@ -26,7 +38,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="mainSpider.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NJ-lianjia-spider/mainSpider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="54" />
+              <folding>
+                <element signature="e#48#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,6 +68,8 @@
         <option value="$PROJECT_DIR$/NJ-lianjia-spider/mainSpider.py" />
         <option value="$PROJECT_DIR$/python3 Internet Spider IN Action/exercise-spider.py" />
         <option value="$PROJECT_DIR$/python3 Internet Spider IN Action/code/spider_weibo.py" />
+        <option value="$PROJECT_DIR$/python3 Internet Spider IN Action/code/sdf.py" />
+        <option value="$PROJECT_DIR$/python3 Internet Spider IN Action/code/spider_JinRiTouTiao.py" />
       </list>
     </option>
   </component>
@@ -45,6 +78,9 @@
     <option name="y" value="424" />
     <option name="width" value="1024" />
     <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -97,7 +133,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.spider_weibo">
+  <component name="RunManager" selected="Python.spider_JinRiTouTiao">
     <configuration name="exercise-spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Spider-Learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -111,6 +147,42 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python3 Internet Spider IN Action/exercise-spider.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="sdf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Spider-Learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python3 Internet Spider IN Action/code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python3 Internet Spider IN Action/code/sdf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="spider_JinRiTouTiao" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Spider-Learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python3 Internet Spider IN Action/code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python3 Internet Spider IN Action/code/spider_JinRiTouTiao.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -137,9 +209,13 @@
     <list>
       <item itemvalue="Python.exercise-spider" />
       <item itemvalue="Python.spider_weibo" />
+      <item itemvalue="Python.spider_JinRiTouTiao" />
+      <item itemvalue="Python.sdf" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.spider_JinRiTouTiao" />
+        <item itemvalue="Python.sdf" />
         <item itemvalue="Python.spider_weibo" />
         <item itemvalue="Python.exercise-spider" />
       </list>
@@ -162,16 +238,16 @@
     <frame x="-1032" y="-8" width="1040" height="1296" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.23453094" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23453094" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39152983" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39152983" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -232,22 +308,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/python3 Internet Spider IN Action/code/sdf.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python3 Internet Spider IN Action/code/spider_weibo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding>
+            <element signature="e#94#128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/NJ-lianjia-spider/mainSpider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="60" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="10" selection-end-column="60" />
+        <state relative-caret-position="414">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="54" />
           <folding>
             <element signature="e#48#63#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python3 Internet Spider IN Action/code/spider_weibo.py">
+    <entry file="file://$PROJECT_DIR$/python3 Internet Spider IN Action/code/spider_JinRiTouTiao.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="771">
+          <caret line="96" selection-start-line="96" selection-end-line="100" />
           <folding>
-            <element signature="e#94#128#0" expanded="true" />
+            <element signature="e#71#86#0" expanded="true" />
           </folding>
         </state>
       </provider>
