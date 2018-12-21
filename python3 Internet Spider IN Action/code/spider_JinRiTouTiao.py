@@ -98,22 +98,3 @@ if __name__ == '__main__':
     pool.map(main, groups)
     pool.close()
     pool.join()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
