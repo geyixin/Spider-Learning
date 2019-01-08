@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="268ba968-b8f9-4ff9-b32e-3939ce5463a6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/python3 Internet Spider IN Action/code/spider_JinRiTouTiao.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,12 +13,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="spider_JinRiTouTiao.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python3 Internet Spider IN Action/code/spider_JinRiTouTiao.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="771">
-              <caret line="96" selection-start-line="96" selection-end-line="100" />
+            <state relative-caret-position="243">
+              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
               <folding>
                 <element signature="e#71#86#0" expanded="true" />
               </folding>
@@ -29,7 +29,7 @@
       <file leaf-file-name="spider_weibo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python3 Internet Spider IN Action/code/spider_weibo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
+            <state relative-caret-position="483">
               <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
               <folding>
                 <element signature="e#94#128#0" expanded="true" />
@@ -41,7 +41,7 @@
       <file leaf-file-name="mainSpider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NJ-lianjia-spider/mainSpider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
+            <state relative-caret-position="368">
               <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="54" />
               <folding>
                 <element signature="e#48#63#0" expanded="true" />
@@ -74,10 +74,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1018" />
-    <option name="y" value="424" />
-    <option name="width" value="1024" />
-    <option name="height" value="688" />
+    <option name="x" value="-1032" />
+    <option name="y" value="-8" />
+    <option name="width" value="1040" />
+    <option name="height" value="1296" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -118,7 +118,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/Bisai" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -238,16 +238,16 @@
     <frame x="-1032" y="-8" width="1040" height="1296" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23453094" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23053892" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39152983" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39152983" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -266,6 +266,36 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/python3 Internet Spider IN Action/code/spider_JinRiTouTiao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1886">
+          <caret line="82" column="17" lean-forward="true" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
+          <folding>
+            <element signature="e#71#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python3 Internet Spider IN Action/code/spider_weibo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding>
+            <element signature="e#94#128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NJ-lianjia-spider/mainSpider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="54" />
+          <folding>
+            <element signature="e#48#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://E:/spider_work/spider-web-python3/exercise-spider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -308,12 +338,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python3 Internet Spider IN Action/code/sdf.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/python3 Internet Spider IN Action/code/sdf.py" />
     <entry file="file://$PROJECT_DIR$/python3 Internet Spider IN Action/code/spider_weibo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
+        <state relative-caret-position="483">
           <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
           <folding>
             <element signature="e#94#128#0" expanded="true" />
@@ -323,7 +351,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NJ-lianjia-spider/mainSpider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
+        <state relative-caret-position="368">
           <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="54" />
           <folding>
             <element signature="e#48#63#0" expanded="true" />
@@ -333,8 +361,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python3 Internet Spider IN Action/code/spider_JinRiTouTiao.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="771">
-          <caret line="96" selection-start-line="96" selection-end-line="100" />
+        <state relative-caret-position="243">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
           <folding>
             <element signature="e#71#86#0" expanded="true" />
           </folding>
